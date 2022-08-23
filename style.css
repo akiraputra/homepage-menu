@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsterrat:wght@300;400;500;600;700;800;900&display=swab");
+
+body {
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ececee;
+  background-color: #1f2029;
+  overflow: hidden;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/pat-back.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  height: 100vh;
+  width: 100%;
+}
+.section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  text-align: center;
+  transform: translateY(-50%);
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 7vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: center;
+  -webkit-text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+[type="checkbox"]: checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.menu-icon:checked + label,
+.menu-icon:not(:checked) + label {
+  position: fixed;
+  top: 63px;
+  right: 75px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu-icon:checked + label:before,
+.menu-icon:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+}
